@@ -807,7 +807,7 @@ type serviceLister interface {
 
 // Kubelet is the main kubelet implementation.
 type Kubelet struct {
-	kubeletConfiguration kubeletconfiginternal.KubeletConfiguration
+	kubeletConfiguration kubeletconfiginternal.KubeletConfiguration // kubelet 配置启动参数
 
 	// hostname is the hostname the kubelet detected or was given via flag/config
 	hostname string
